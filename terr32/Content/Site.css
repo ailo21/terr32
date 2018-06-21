@@ -1,0 +1,209 @@
+﻿@media (min-width: 1200px){
+.container{
+max-width:1200px;
+}
+}
+
+.nav > li > a {
+    padding: 20px 15px;
+    font-family: Exo2;
+    font-weight:400;
+text-transform:uppercase;
+}
+
+body {    
+    font-family: OpenSans,Arial, sans-serif;
+}
+a {
+    color: #bd1e2e;
+}
+
+.main-product {
+    padding-top: 69px;
+padding-bottom:20px;
+}
+.main-product h3{
+margin-bottom:72px;
+}
+
+.product_item{
+    display:block;
+    background-color:#fff;
+    min-height:50px;
+    color:#000;
+}
+
+h3 {
+    font-family: Exo2;
+    font-weight:bold;
+    font-size:36px;
+}
+
+.product_item{
+    background-repeat:no-repeat;
+    height:190px;
+    color:#fff;
+    position:relative;
+}
+.product_item span{
+    font-weight:bold;
+    position:absolute;
+    bottom:30px;
+    left:34px;
+    background-size: cover;    
+}
+
+
+.product_item_white{
+    background-color:#fff;
+    color:#000;
+}
+.product_item_red {
+    color: #000;
+}
+
+
+.product_item_1 {
+    background-image: url(/Content/img/index/vlaga.jpg);
+    background-position: top right;
+}
+.product_item_2 {
+    background-image: url(/Content/img/index/uhod.jpg)
+}
+.product_item_3 {
+    background-image: url(/Content/img/index/ochistitel.jpg)
+}
+.product_item_4 {
+    background-image: url(/Content/img/index/stelki.jpg)
+}
+.product_item_5 {
+    background-image: url(/Content/img/index/nabor.jpg)
+}
+.product_item_6 {
+    background-image: url(/Content/img/index/proff.jpg)
+}
+.product_item_7 {
+    background-image: url(/Content/img/index/gladkaj-koga.jpg)
+}
+.product_item_8 {
+    background-image: url(/Content/img/index/zamsh.jpg)
+}
+.product_item_9 {
+    background-image: url(/Content/img/index/sport.jpg)
+}
+.product_item_10 {
+    background-image: url(/Content/img/index/aksesuar.jpg)
+}
+.product_item_11 {
+    background-image: url(/Content/img/index/komfort.jpg)
+}
+
+
+/*slider*/
+.main-slider{background-color:#fff;}
+.slider_list {
+margin:90px 0 100px;
+}
+.slider_info {
+    background-color: #f4f5f9;
+    min-height: 433px;
+display:inline-block;
+padding:50px 40px;
+}
+.slider_info h4{
+    font-family: Exo2;
+    font-weight:bold;
+    font-size:36px;
+}
+    .slider_info p {
+        font-size: 18px;
+        font-family: Exo2;
+    }
+.carousel-indicators{
+text-align:right;
+
+}
+.carousel-indicators li{
+    border: 1px solid #bd1e2e;
+    border-radius:0;
+}
+.carousel-indicators li.active{
+    background-color:#bd1e2e;
+
+}
+
+
+
+.tops {
+    background-color: #fff;
+    
+}
+.tops_logo_wr{
+margin-top:30px;
+display:inline-block;
+}
+
+.tops .soc {
+    margin-top: 51px;
+    margin-left: 39px;
+}
+.soc_item {
+    display: inline-block;
+    margin-right: 10px;
+    color: #000;
+    border: 3px solid #000;
+    text-align: center;
+    width: 39px;
+    height: 39px;
+    font-size: 22px;
+}
+
+    .soc_item:hover,
+    .soc_item:focus,
+    .soc_item:active {
+        color: #bd1e2e;
+        border: 3px solid #bd1e2e;
+    }
+
+.topcont:before {
+    content: '';
+    background: url(/Content/img/icon/phone.png) no-repeat;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+position:absolute;
+top:8px;
+}
+.topcont {
+    font-family: Exo2;
+position:relative;
+margin-top:50px;
+}
+.topcont_info {
+    padding-left: 49px;
+}
+.topcont_phone {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+.topcont_work{
+font-size:12px;
+}
+
+.podbor {
+display:block;
+    background-color: #bd1e2e;
+text-align:center;
+height:180px;
+padding-top:45px;
+}
+.podbor img{
+margin-bottom:4px;
+}
+    .podbor div {
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 18px;
+        font-family: Exo2;
+    }

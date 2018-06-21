@@ -1,0 +1,306 @@
+﻿<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A603913F-9E72-4245-8E57-8B3FC9F1D64E}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>terr32</RootNamespace>
+    <AssemblyName>terr32</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.4.1.9004, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="WebGrease, Version=1.5.2.14234, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <None Include="packages.config" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\web.config" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\fonts\exo2\exotwo.css" />
+    <Content Include="Content\fonts\OpenSans\opensans.css" />
+    <Content Include="Content\img\icon\2icon.png" />
+    <Content Include="Content\img\icon\gladkaj-koga.jpg" />
+    <Content Include="Content\img\icon\history.png" />
+    <Content Include="Content\img\icon\images\uhod_01.png" />
+    <Content Include="Content\img\icon\images\uhod_02.png" />
+    <Content Include="Content\img\icon\images\uhod_03.jpg" />
+    <Content Include="Content\img\icon\images\uhod_04.png" />
+    <Content Include="Content\img\icon\images\uhod_05.png" />
+    <Content Include="Content\img\icon\images\zachita_01.png" />
+    <Content Include="Content\img\icon\images\zachita_02.png" />
+    <Content Include="Content\img\icon\images\zachita_03.jpg" />
+    <Content Include="Content\img\icon\images\zachita_04.png" />
+    <Content Include="Content\img\icon\images\zachita_05.png" />
+    <Content Include="Content\img\icon\map.png" />
+    <Content Include="Content\img\icon\ochistitel.png" />
+    <Content Include="Content\img\icon\phone.png" />
+    <Content Include="Content\img\icon\proff.jpg" />
+    <Content Include="Content\img\icon\sport.jpg" />
+    <Content Include="Content\img\icon\uhod.jpg" />
+    <Content Include="Content\img\icon\vlaga.jpg" />
+    <Content Include="Content\img\icon\zamsh.jpg" />
+    <Content Include="Content\img\index\aksesuar.jpg" />
+    <Content Include="Content\img\index\blog1.png" />
+    <Content Include="Content\img\index\blog2.png" />
+    <Content Include="Content\img\index\gladkaj-koga.jpg" />
+    <Content Include="Content\img\index\komfort.jpg" />
+    <Content Include="Content\img\index\nabor.jpg" />
+    <Content Include="Content\img\index\ochistitel.jpg" />
+    <Content Include="Content\img\index\proff.jpg" />
+    <Content Include="Content\img\index\slider1.jpg" />
+    <Content Include="Content\img\index\sport.jpg" />
+    <Content Include="Content\img\index\stelki.jpg" />
+    <Content Include="Content\img\index\uhod.jpg" />
+    <Content Include="Content\img\index\vlaga.jpg" />
+    <Content Include="Content\img\index\zamsh.jpg" />
+    <Content Include="Content\img\logo.png" />
+    <Content Include="Content\plugin\fastclick\fastclick.js" />
+    <Content Include="Content\plugin\fastclick\fastclick.min.js" />
+    <Content Include="Content\plugin\slimScroll\jquery.slimscroll.js" />
+    <Content Include="Content\plugin\slimScroll\jquery.slimscroll.min.js" />
+    <Content Include="Content\skin-black.css" />
+    <Content Include="Content\template.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\app.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Content\fonts\OpenSans\OpenSansBoldItalic.eot" />
+    <Content Include="Content\fonts\OpenSans\OpenSansBoldItalic.ttf" />
+    <Content Include="Content\fonts\OpenSans\OpenSansBoldItalic.woff" />
+    <Content Include="Content\fonts\OpenSans\OpenSansItalic.eot" />
+    <Content Include="Content\fonts\OpenSans\OpenSansItalic.ttf" />
+    <Content Include="Content\fonts\OpenSans\OpenSansItalic.woff" />
+    <Content Include="Content\fonts\OpenSans\OpenSansRegular.eot" />
+    <Content Include="Content\fonts\OpenSans\OpenSansRegular.ttf" />
+    <Content Include="Content\fonts\OpenSans\OpenSansRegular.woff" />
+    <Content Include="Content\fonts\OpenSans\OpenSansSemiBold.eot" />
+    <Content Include="Content\fonts\OpenSans\OpenSansSemiBold.ttf" />
+    <Content Include="Content\fonts\OpenSans\OpenSansSemiBold.woff" />
+    <Content Include="Content\fonts\exo2\exo2.ttf" />
+    <Content Include="Content\fonts\exo2\exo2.woff" />
+    <Content Include="Content\fonts\exo2\exo2.woff2" />
+    <Content Include="Content\fonts\exo2\exo2black.ttf" />
+    <Content Include="Content\fonts\exo2\exo2black.woff" />
+    <Content Include="Content\fonts\exo2\exo2black.woff2" />
+    <Content Include="Content\fonts\exo2\exo2blackitalic.ttf" />
+    <Content Include="Content\fonts\exo2\exo2blackitalic.woff" />
+    <Content Include="Content\fonts\exo2\exo2blackitalic.woff2" />
+    <Content Include="Content\fonts\exo2\exo2bold.ttf" />
+    <Content Include="Content\fonts\exo2\exo2bold.woff" />
+    <Content Include="Content\fonts\exo2\exo2bold.woff2" />
+    <Content Include="Content\fonts\exo2\exo2bolditalic.ttf" />
+    <Content Include="Content\fonts\exo2\exo2bolditalic.woff" />
+    <Content Include="Content\fonts\exo2\exo2bolditalic.woff2" />
+    <Content Include="Content\fonts\exo2\exo2extrabold.ttf" />
+    <Content Include="Content\fonts\exo2\exo2extrabold.woff" />
+    <Content Include="Content\fonts\exo2\exo2extrabold.woff2" />
+    <Content Include="Content\fonts\exo2\exo2extrabolditalic.ttf" />
+    <Content Include="Content\fonts\exo2\exo2extrabolditalic.woff" />
+    <Content Include="Content\fonts\exo2\exo2extrabolditalic.woff2" />
+    <Content Include="Content\fonts\exo2\exo2extralight.ttf" />
+    <Content Include="Content\fonts\exo2\exo2extralight.woff" />
+    <Content Include="Content\fonts\exo2\exo2extralight.woff2" />
+    <Content Include="Content\fonts\exo2\exo2extralightitalic.ttf" />
+    <Content Include="Content\fonts\exo2\exo2extralightitalic.woff" />
+    <Content Include="Content\fonts\exo2\exo2extralightitalic.woff2" />
+    <Content Include="Content\fonts\exo2\exo2italic.ttf" />
+    <Content Include="Content\fonts\exo2\exo2italic.woff" />
+    <Content Include="Content\fonts\exo2\exo2italic.woff2" />
+    <Content Include="Content\fonts\exo2\exo2light.ttf" />
+    <Content Include="Content\fonts\exo2\exo2light.woff" />
+    <Content Include="Content\fonts\exo2\exo2light.woff2" />
+    <Content Include="Content\fonts\exo2\exo2lightitalic.ttf" />
+    <Content Include="Content\fonts\exo2\exo2lightitalic.woff" />
+    <Content Include="Content\fonts\exo2\exo2lightitalic.woff2" />
+    <Content Include="Content\fonts\exo2\exo2medium.ttf" />
+    <Content Include="Content\fonts\exo2\exo2medium.woff" />
+    <Content Include="Content\fonts\exo2\exo2medium.woff2" />
+    <Content Include="Content\fonts\exo2\exo2mediumitalic.ttf" />
+    <Content Include="Content\fonts\exo2\exo2mediumitalic.woff" />
+    <Content Include="Content\fonts\exo2\exo2mediumitalic.woff2" />
+    <Content Include="Content\fonts\exo2\exo2semibold.ttf" />
+    <Content Include="Content\fonts\exo2\exo2semibold.woff" />
+    <Content Include="Content\fonts\exo2\exo2semibold.woff2" />
+    <Content Include="Content\fonts\exo2\exo2semibolditalic.ttf" />
+    <Content Include="Content\fonts\exo2\exo2semibolditalic.woff" />
+    <Content Include="Content\fonts\exo2\exo2semibolditalic.woff2" />
+    <Content Include="Content\fonts\exo2\exo2thin.ttf" />
+    <Content Include="Content\fonts\exo2\exo2thin.woff" />
+    <Content Include="Content\fonts\exo2\exo2thin.woff2" />
+    <Content Include="Content\fonts\exo2\exo2thinitalic.ttf" />
+    <Content Include="Content\fonts\exo2\exo2thinitalic.woff" />
+    <Content Include="Content\fonts\exo2\exo2thinitalic.woff2" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\main.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Web.config" />
+    <Content Include="Views\Main\Index.cshtml" />
+    <Content Include="Views\Shared\_Layout - Copy.cshtml" />
+    <Content Include="Views\Main\Katalog.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\MainController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>60804</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:60804/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
