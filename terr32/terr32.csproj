@@ -119,6 +119,7 @@
   <ItemGroup>
     <Content Include="Content\fonts\exo2\exotwo.css" />
     <Content Include="Content\fonts\OpenSans\opensans.css" />
+    <Content Include="Content\img\footer-logo.png" />
     <Content Include="Content\img\icon\2icon.png" />
     <Content Include="Content\img\icon\gladkaj-koga.jpg" />
     <Content Include="Content\img\icon\history.png" />
