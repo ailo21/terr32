@@ -17,6 +17,9 @@ body {
 a {
     color: #bd1e2e;
 }
+a:hover{
+    color: #bd1e2e;
+}
 
 .main-product {
     padding-top: 69px;
@@ -34,6 +37,18 @@ margin-bottom:72px;
     color:#000;
 }
 
+h1 {
+    font-family: Exo2;
+    font-weight: bold;
+    font-size: 36px;
+    margin-top: 61px;
+    margin-bottom: 55px;
+}
+h2 {
+    font-family: Exo2;
+    font-weight: bold;
+    font-size:20px;
+}
 h3 {
     font-family: Exo2;
     font-weight:bold;
@@ -43,14 +58,14 @@ h3 {
 font-size:13px;
 padding-left:50px;
 font-weight:normal;
-font
 }
 
-.product_item{
-    background-repeat:no-repeat;
-    height:190px;
-    color:#fff;
-    position:relative;
+.product_item {
+    background-repeat: no-repeat;
+    height: 190px;
+    color: #fff;
+    position: relative;
+    background-size: cover;
 }
 .product_item span{
     font-weight:bold;
@@ -381,6 +396,7 @@ margin-bottom:0;
 .main-soc {
     padding-top: 74px;
     padding-bottom: 101px;
+    background-color: #ecf0f5;
 }
 
 .main-soc h3{
@@ -389,4 +405,90 @@ margin-bottom:0;
 
 .typage{
 background-color:#fff;
+margin-bottom:30px;
+}
+
+.bread {
+    background-color: #e0e0e5;
+}
+.breadcrumb {
+    background-color: #e0e0e5;
+    padding: 30px 15px  ;
+margin:0;
+}
+.breadcrumb a{
+    font-family: Exo2;
+    color:#000;
+}
+#myProd{
+margin-bottom:80px;
+}
+
+#myProd .carousel-indicators {
+    text-align: center;
+    bottom:-50px;
+}
+
+.select-prod{
+text-align:center;
+}
+
+.select-prod_btn {
+    margin-top: -130px;
+}
+.btn_red {
+    background-color: #bd1e2e;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 0;
+    font-size: 18px;
+    font-family: Exo2;
+    padding: 10px 20px;
+}
+.btn_red:hover{
+    color:#fff;
+}
+.category_item {
+    margin-bottom: 50px;
+}
+.category_all {
+    line-height: 28px;
+    font-size: 12px;
+}
+.category_sub {
+    background-color: #bd1e2e;
+    padding: 18px 25px 30px;
+    margin-bottom: 20px;
+    min-height:197px;
+}
+.category_sub a{
+    color: #fff;
+    overflow:hidden;
+    line-height: 32px;
+}
+.category_sub a:hover{
+text-decoration:underline;
+}
+
+.category_el {
+    display: block;
+    padding: 10px 22px 10px;
+    border: 1px solid #e0e0e5;
+    min-height: 248px;
+    max-height:248px;
+    margin-bottom:20px;    
+}
+.category_el img{
+max-width:100%;
+margin:0 auto 10px;
+
+}
+.category_el div{
+text-align:left;
+}
+.category_el span{
+color:#000;
+font-size:18px;
+font-family:Exo2;
+line-height:21px;
 }
