@@ -4,6 +4,27 @@ max-width:1200px;
 }
 }
 
+
+@media only screen and (max-width: 768px){
+    .navbar-header {
+background-color:#fff;
+
+    }
+    .navbar-toggle{
+color:#000;
+    }
+    .skin-black .main-header{
+box-shadow:none;
+    }
+    a.gorblog{
+height:auto!important;
+    }
+    div.gorblog_info {
+        padding: 20px;
+        display: inline-block;
+    }
+}
+
 .nav > li > a {
     padding: 20px 15px;
     font-family: Exo2;
@@ -142,6 +163,9 @@ font-weight:normal;
 
 /*slider*/
 .main-slider{background-color:#fff;}
+.slider_img{
+max-width:100%;
+}
 .slider_list {
 margin:90px 0 100px;
 }
@@ -309,9 +333,14 @@ h3 .all_view {
     line-height: 58px;
 }
 
+.soc_widget_item {margin-bottom:20px;}
 .about_block_item {
     background-color: #f4f5f9;
-min-height:440px;
+    min-height: 440px;
+    margin-bottom: 20px;
+    display: block;
+    color: #000;
+    text-decoration: none !important;
 }
 .about_block_top{
     position:relative;
@@ -426,6 +455,9 @@ margin-bottom:0;
     padding-bottom: 47px;
 }
 
+iframe {
+    max-width: 100%;
+}
 .typage{
     background-color:#fff;
     margin-bottom:50px;
@@ -440,6 +472,9 @@ margin-bottom:18px;
 font-family:Exo2;
 font-weight:bold;
 font-size:18px;
+}
+.typage {
+    font-size: 16px;
 }
 .typage p{
 font-size:16px;
@@ -494,11 +529,14 @@ margin-bottom:80px;
 .select-prod{
 text-align:center;
 }
-
+.select-prod img{
+max-width:100%;
+}
 .select-prod_btn {
     margin-top: -130px;
     
 }
+
 .btn_red {
     background-color: #bd1e2e;
     color: #fff;
@@ -602,11 +640,13 @@ line-height:14px;
 }
 
 .gorblog {
-    background-color: #e0e0e5;
-    overflow:auto;
-    display:block;
-    color:#000;
-text-decoration:none!important;
+    background-color: #e0e0e5;    
+    display: block;
+    color: #000;
+    text-decoration: none !important;
+    margin-bottom: 30px;
+    overflow: hidden;
+    height: 155px;
 }
     .gorblog:hover {
         text-decoration: none !important;
@@ -781,3 +821,21 @@ color:#bd1e2e;
 margin-left:5px;
 margin-right:5px;
 }
+
+.yakor {
+    text-decoration: none!important;
+    border-bottom: 1px dashed #bd1e2e;
+}
+.alert_warning {
+    background-color: #ecf0f5;
+    padding: 38px 20px;
+    border: 1px solid rgb(224, 224, 229);
+    border-radius: 0;
+    padding-left: 30px;
+    display: flex;
+}
+    .alert_warning span {
+        font-size: 32px;
+        color: rgb(224, 224, 229);
+        padding: 9px 31px 0 0;
+    }

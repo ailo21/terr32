@@ -68,8 +68,8 @@
                 <div class="container">
                     <div class="navbar-header">
                         <a href="/" class="navbar-brand visible-xs">
-                            @*<img  src="~/Content/img/logo.png"/>*@
-                                TARRAGO
+                            <img  src="~/Content/img/footer-logo.png"/>
+                                @*TARRAGO*@
                         </a>
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
                             <i class="fa fa-bars"></i>
@@ -111,39 +111,60 @@
 
         <div class="main-soc">
             <div class="container">
+                <h3>
+                    Присоединяйтесь в соцсетях
+                    <span class="head_small">задавайте вопросы, следите за новинками, получайте призы от бренда и партнёров</span>
+                </h3>
                 <div class="row">
-                    <h3>
-                        Присоединяйтесь в соцсетях
-                        <span class="head_small">задавайте вопросы, следите за новинками, получайте призы от бренда и партнёров</span>
-                    </h3>
+                    
                     <div class="soc_widget">
-                        <div class="col-sm-3"></div>
                         <div class="col-sm-3">
-                            <script type="text/javascript" src="https://vk.com/js/api/openapi.js?154"></script>
-
-                            <!-- VK Widget -->
-                            <div id="vk_groups"></div>
-                            <script type="text/javascript">
-                                VK.Widgets.Group("vk_groups", { mode: 3 }, 154461986);
-                            </script>
+                            <div class="soc_widget_item">
+                                <a href="https://www.instagram.com/uxod_za_obuviu/" target="_blank">
+                                    <img src="~/Content/img/instagram.jpg" />
+                                </a>
+                            </div>                            
                         </div>
-                        <div class="col-sm-3"></div>
                         <div class="col-sm-3">
-                            <div id="fb-root"></div>
-                            <script>
-                                (function (d, s, id) {
-                                    var js, fjs = d.getElementsByTagName(s)[0];
-                                    if (d.getElementById(id)) return;
-                                    js = d.createElement(s); js.id = id;
-                                    js.src = 'https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v3.0';
-                                    fjs.parentNode.insertBefore(js, fjs);
-                                }(document, 'script', 'facebook-jssdk'));</script>
+                            <div class="soc_widget_item">
+                                <a href="https://www.youtube.com/channel/UCH8LXMaamvn_z0iLlP3k-6g" target="_blank">
+                                    <img src="~/Content/img/youtube.jpg" />
+                                </a>
+                            </div>
+                            
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="soc_widget_item">
+                                <script type="text/javascript" src="https://vk.com/js/api/openapi.js?154"></script>
 
-                            <div class="fb-page"
-                                 data-href="https://www.facebook.com/tarrago.salrus"
-                                 data-height="210"
-                                 data-hide-cover="false"
-                                 data-show-facepile="false"></div>
+                                <!-- VK Widget -->
+                                <div id="vk_groups"></div>
+                                <script type="text/javascript">
+                                    VK.Widgets.Group("vk_groups", { mode: 3 }, 154461986);
+                                </script>
+                            </div>
+                            
+                        </div>
+                     
+                        <div class="col-sm-3">
+                            <div class="soc_widget_item">
+                                <div id="fb-root"></div>
+                                <script>
+                                    (function (d, s, id) {
+                                        var js, fjs = d.getElementsByTagName(s)[0];
+                                        if (d.getElementById(id)) return;
+                                        js = d.createElement(s); js.id = id;
+                                        js.src = 'https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v3.0';
+                                        fjs.parentNode.insertBefore(js, fjs);
+                                    }(document, 'script', 'facebook-jssdk'));</script>
+
+                                <div class="fb-page"
+                                     data-href="https://www.facebook.com/tarrago.salrus"
+                                     data-height="210"
+                                     data-hide-cover="false"
+                                     data-show-facepile="false"></div>
+                            </div>
+                            
 
 
                         </div>

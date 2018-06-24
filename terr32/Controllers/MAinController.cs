@@ -25,5 +25,13 @@ namespace terr32.Controllers
         {
             return View();
         }
+        public ActionResult Article()
+        {
+            return View();
+        }
+        public ActionResult About()
+        {
+            return View();
+        }
     }
 }
