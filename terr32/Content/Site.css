@@ -545,7 +545,7 @@ max-width:100%;
     font-size: 18px;
     font-family: Exo2;
     padding: 10px 20px;
-text-decoration:none;
+text-decoration:none!important;
 }
 .btn_red:hover{
     color:#fff;
