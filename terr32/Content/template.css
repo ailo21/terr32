@@ -1,15 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic);
-/*!
- *   AdminLTE v2.3.0
- *   Author: Almsaeed Studio
- *	 Website: Almsaeed Studio <http://almsaeedstudio.com>
- *   License: Open source - MIT
- *           Please visit http://opensource.org/licenses/MIT for more information
-!*/
-/*
- * Core: General Layout Style
- * -------------------------
- */
+
 html,
 body {
   min-height: 100%;
@@ -390,6 +379,7 @@ a:focus {
   .main-header .navbar {
     width: 100%;
     float: none;
+min-height:50px;
   }
   .main-header .navbar {
     margin: 0;
@@ -908,19 +898,21 @@ a:focus {
 .dropdown-menu {
   box-shadow: none;
   border-color: #eee;
+
 }
 .dropdown-menu > li > a {
-  color: #777;
+  color: #fff;
+  padding: 6px 20px;
 }
 .dropdown-menu > li > a > .glyphicon,
 .dropdown-menu > li > a > .fa,
 .dropdown-menu > li > a > .ion {
   margin-right: 10px;
 }
-.dropdown-menu > li > a:hover {
-  background-color: #e1e3e9;
-  color: #333;
-}
+    .dropdown-menu > li > a:hover {
+        background-color: #e03848;
+        color: #fff;
+    }
 .dropdown-menu > .divider {
   background-color: #eee;
 }

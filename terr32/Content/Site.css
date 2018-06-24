@@ -21,6 +21,13 @@ a:hover{
     color: #bd1e2e;
 }
 
+
+.navbar-nav > li > .dropdown-menu {
+    background-color: #bd1e2e;
+    border-top: 0;
+    border-radius: 0;
+border:none;
+}
 .main-product {
     padding-top: 69px;
     padding-bottom: 102px;

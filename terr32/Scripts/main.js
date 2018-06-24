@@ -17,7 +17,7 @@ function init () {
             gridSize: 32,
             clusterDisableClickZoom: true
         });
-
+    myMap.behaviors.disable('scrollZoom'); 
     // Чтобы задать опции одиночным объектам и кластерам,
     // обратимся к дочерним коллекциям ObjectManager.
     objectManager.objects.options.set('preset', 'islands#redIcon');
