@@ -10,6 +10,9 @@ max-width:1200px;
     font-weight:400;
 text-transform:uppercase;
 }
+.nav > li > a span  {
+padding-right:7px;
+}
 
 body {    
     font-family: OpenSans,Arial, sans-serif;
@@ -494,6 +497,7 @@ text-align:center;
 
 .select-prod_btn {
     margin-top: -130px;
+    
 }
 .btn_red {
     background-color: #bd1e2e;
@@ -503,6 +507,7 @@ text-align:center;
     font-size: 18px;
     font-family: Exo2;
     padding: 10px 20px;
+text-decoration:none;
 }
 .btn_red:hover{
     color:#fff;
@@ -513,6 +518,7 @@ text-align:center;
 .category_all {
     line-height: 28px;
     font-size: 12px;
+text-decoration:none!important;
 }
 .category_sub {
     background-color: #bd1e2e;
@@ -524,6 +530,7 @@ text-align:center;
     color: #fff;
     overflow:hidden;
     line-height: 32px;
+text-decoration:none;
 }
 .category_sub a:hover{
 text-decoration:underline;
@@ -587,7 +594,7 @@ line-height:14px;
 
 .produkt_art {
     margin-top: -27px;
-}}
+}
 
 .step {
     font-weight: bold;
@@ -640,6 +647,10 @@ float:left;
     }
 
 
+.nav-tabs > li > a:hover, .nav-tabs > li > a:active, .nav-tabs > li > a:focus {
+    color: #bd1e2e;
+    background: #fff;
+}
 ul.nav.nav-tabs {
     display: inline-block;
 }
@@ -704,4 +715,69 @@ margin-bottom:30px;
 
 .im_item{
 display:inline-block;
+}
+
+.article_col:nth-child(4n+1)
+{
+clear:both;
+}
+.article_col:first-child{
+clear:none!important;
+}
+
+.article_item {
+    text-decoration: none !important;
+    background-color: #e0e0e5;
+color:#000;
+display:block;
+margin-bottom:40px;
+}
+.article_item:hover{
+    color:#000;
+}
+.article_header {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 18px;
+}
+.article_desc {
+    line-height: 16px;
+    margin-bottom: 32px;
+}
+.article_date {
+    color: #bd1e2e;
+}
+.article_info{
+padding: 20px 20px;
+}
+
+
+ul.pagination li:before{
+display:none;
+}
+.pagination > li > a{
+
+}
+.pagination > li.active a {
+    background-color: #bd1e2e;
+}
+.pagination > li > a, .pagination > li > span {
+    border: 0;
+    color: #000;
+    font-weight: bold!important;
+    padding: 0px 9px 1px;
+}
+.pagination>li>a:hover, .pagination>li>span:hover, .pagination>li>a:focus, .pagination>li>span:focus{
+background-color:#fff;
+text-decoration:underline;
+color:#bd1e2e;
+
+}
+.pagination > li >a span
+{
+    font-size: 23px;
+    font-weight: bold;
+margin-left:5px;
+margin-right:5px;
 }
