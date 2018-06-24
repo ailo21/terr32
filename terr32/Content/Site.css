@@ -404,8 +404,25 @@ margin-bottom:0;
 }
 
 .typage{
-background-color:#fff;
-margin-bottom:30px;
+    background-color:#fff;
+    margin-bottom:50px;
+}
+.typage h2{
+font-size:26px; 
+margin-top:25px;
+margin-bottom:18px;
+}
+.typage p{
+font-size:16px;
+font-family:Exo2;
+font-weight: 500;
+margin-bottom:21px;
+}
+.typage a{
+text-decoration:underline;
+}
+.typage a:hover{
+text-decoration:none;
 }
 
 .bread {
@@ -413,8 +430,8 @@ margin-bottom:30px;
 }
 .breadcrumb {
     background-color: #e0e0e5;
-    padding: 30px 15px  ;
-margin:0;
+    padding: 30px 15px;
+    margin:0;
 }
 .breadcrumb a{
     font-family: Exo2;
@@ -470,13 +487,20 @@ text-align:center;
 text-decoration:underline;
 }
 
+.prod-list .category_el {
+    min-height: 340px;
+    max-height: 340px;
+}
+
 .category_el {
     display: block;
     padding: 10px 22px 10px;
     border: 1px solid #e0e0e5;
     min-height: 248px;
-    max-height:248px;
-    margin-bottom:20px;    
+    max-height: 248px;
+    margin-bottom: 20px;
+    overflow: hidden;
+text-decoration:none!important;
 }
 .category_el img{
 max-width:100%;
@@ -491,4 +515,64 @@ color:#000;
 font-size:18px;
 font-family:Exo2;
 line-height:21px;
+}
+.category_el p{
+color:#000;
+margin-top:5px;
+}
+
+.types_item {
+    display: block;
+    background-color: #bd1e2e;
+    color: #fff;
+    padding: 10px 23px 14px;
+    margin-bottom: 20px;
+    font-family: Exo2;
+    font-size: 18px;
+}
+.types_item:hover{
+    color:#fff;
+}
+
+.produkt_img{
+float:left;
+margin:0 25px 25px 0;
+}
+
+.step {
+    font-weight: bold;
+    color: #bd1e2e;
+}
+
+.gorblog {
+    background-color: #e0e0e5;
+    overflow:auto;
+    display:block;
+    color:#000;
+text-decoration:none!important;
+}
+    .gorblog:hover {
+        text-decoration: none !important;
+        color: #000;
+    }
+.gorblog_img{
+float:left;
+}
+.gorblog_info {
+    padding-left: 285px;
+    padding-right: 20px;
+    padding-top: 15px;
+}
+    .gorblog_info h6 {
+        font-size: 18px;
+        font-weight: bold;
+        font-family: Exo2;
+        line-height: 21px;
+    }
+
+.go_back {
+    border: 1px solid #e0e0e5;
+padding:10px;
+display:block;
+text-decoration:none!important;
 }

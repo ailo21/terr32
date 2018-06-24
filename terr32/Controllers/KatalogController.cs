@@ -13,5 +13,13 @@ namespace terr32.Controllers
         {
             return View();
         }
+        public ActionResult Step2()
+        {
+            return View();
+        }
+        public ActionResult Prod()
+        {
+            return View();
+        }
     }
 }
