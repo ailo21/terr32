@@ -103,6 +103,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\data.json" />
     <None Include="packages.config" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
@@ -112,6 +113,7 @@
     <Content Include="Views\Katalog\Index.cshtml" />
     <Content Include="Views\Katalog\Step2.cshtml" />
     <Content Include="Views\Katalog\Prod.cshtml" />
+    <Content Include="Views\Main\Contacts.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

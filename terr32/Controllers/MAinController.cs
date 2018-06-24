@@ -17,5 +17,9 @@ namespace terr32.Controllers
         {
             return View();
         }
+        public ActionResult Contacts()
+        {
+            return View();
+        }
     }
 }
