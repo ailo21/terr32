@@ -100,6 +100,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\img\about\history.png" />
+    <Content Include="Content\img\about\nokr.png" />
+    <Content Include="Content\img\about\vintage_map.png" />
     <Content Include="Content\img\bloog_prod.jpg" />
     <Content Include="Content\img\instagram.jpg" />
     <Content Include="Content\img\knopka-wild.png" />
@@ -121,6 +124,7 @@
     <Content Include="Views\Main\Blog.cshtml" />
     <Content Include="Views\Main\Article.cshtml" />
     <Content Include="Views\Main\About.cshtml" />
+    <Content Include="Views\Shared\_Layout - Копировать.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -260,7 +264,6 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Web.config" />
     <Content Include="Views\Main\Index.cshtml" />
-    <Content Include="Views\Shared\_Layout - Copy.cshtml" />
     <Content Include="Views\Main\Katalog.cshtml" />
   </ItemGroup>
   <ItemGroup>
