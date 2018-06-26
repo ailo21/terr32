@@ -63,4 +63,10 @@ display:none;
     .navbar-nav > li > .dropdown-menu{
 min-height:200px;
     }
+    .review_item:before{
+display:none;
+    }
+    .review_item_text{
+padding:0;
+    }
 }

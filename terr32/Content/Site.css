@@ -865,13 +865,27 @@ margin-right:5px;
     text-decoration: none!important;
     border-bottom: 1px dashed #bd1e2e;
 }
-.alert_warning {
+
+
+blockquote {
     background-color: #ecf0f5;
     padding: 38px 20px;
     border: 1px solid rgb(224, 224, 229);
     border-radius: 0;
     padding-left: 30px;
     display: flex;
+}
+    blockquote:before {
+        content: "\f071";
+        font-size: 32px;
+        color: #d1d3dc;
+        font-family: FontAwesome;
+        padding-right: 37px;
+    }
+
+
+.alert_warning {
+    
 }
     .alert_warning span {
         font-size: 32px;
@@ -997,3 +1011,8 @@ background-color: #cd3241;
     padding: 8px 20px;
 }
 /*2col menu*/
+
+.read_more h2 {
+    margin-top: 100px;
+    margin-bottom: 36px;
+}
