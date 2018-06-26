@@ -100,15 +100,27 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\img\bloog_prod.jpg" />
+    <Content Include="Content\img\instagram.jpg" />
+    <Content Include="Content\img\knopka-wild.png" />
+    <Content Include="Content\img\youtube.jpg" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\data.json" />
     <None Include="packages.config" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\web.config" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\Katalog\Index.cshtml" />
+    <Content Include="Views\Katalog\Step2.cshtml" />
+    <Content Include="Views\Katalog\Prod.cshtml" />
+    <Content Include="Views\Main\Contacts.cshtml" />
+    <Content Include="Views\Main\Blog.cshtml" />
+    <Content Include="Views\Main\Article.cshtml" />
+    <Content Include="Views\Main\About.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -255,6 +267,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\KatalogController.cs" />
     <Compile Include="Controllers\MainController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

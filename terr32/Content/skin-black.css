@@ -7,9 +7,7 @@
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05);
 }
-.skin-black .main-header .navbar-toggle {
-  color: #333;
-}
+
 .skin-black .main-header .navbar-brand {
   color: #333;
 }
@@ -26,8 +24,8 @@
 .skin-black .main-header > .navbar .nav .open > a:hover,
 .skin-black .main-header > .navbar .nav .open > a:focus,
 .skin-black .main-header > .navbar .nav > .active > a {
-  background: #ffffff;
-  color: #999999;
+     background: #bd1e2e;
+    color: #fff;
 }
 .skin-black .main-header > .navbar .sidebar-toggle {
   color: #333333;

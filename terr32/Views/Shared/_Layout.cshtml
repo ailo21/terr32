@@ -35,10 +35,10 @@
                     </div>
                     <div class="col-sm-3">
                         <div class="soc">
-                            <a href="" class="soc_item"><span class="fa fa-vk"></span></a>
-                            <a href="" class="soc_item"><span class="fa fa-instagram"></span></a>
-                            <a href="" class="soc_item"><span class="fa fa-facebook-f"></span></a>
-                            <a href="" class="soc_item"><span class="fa fa-youtube-play"></span></a>   
+                            <a href="https://vk.com/tarrago.salrus" target="_blank" class="soc_item"><span class="fa fa-vk"></span></a>
+                            <a href="https://www.instagram.com/uxod_za_obuviu/" target="_blank" class="soc_item"><span class="fa fa-instagram"></span></a>
+                            <a href="https://www.facebook.com/tarrago.salrus" target="_blank" class="soc_item"><span class="fa fa-facebook-f"></span></a>
+                            <a href="https://www.youtube.com/channel/UCH8LXMaamvn_z0iLlP3k-6g" target="_blank" class="soc_item"><span class="fa fa-youtube-play"></span></a>   
                         </div>
                     </div>
                     <div class="col-sm-3">
@@ -53,7 +53,7 @@
 
                     </div>
                     <div class="col-sm-3 podbor_wr">
-                        <a class="podbor">
+                        <a class="podbor" href="#">
                             <img src="~/Content/img/icon/2icon.png" alt="" />
                             <div>
                                 подобрать средство
@@ -67,33 +67,40 @@
             <nav class="navbar navbar-static-top">
                 <div class="container">
                     <div class="navbar-header">
-                        @*<a href="/" class="navbar-brand">TARRAGO</a>*@
+                        <a href="/" class="navbar-brand visible-xs">
+                            <img  src="~/Content/img/footer-logo.png"/>
+                                @*TARRAGO*@
+                        </a>
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
                             <i class="fa fa-bars"></i>
                         </button>
-                    </div>                    
-                    <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
-                        <ul class="nav navbar-nav">
-                            <li><a href="/about">О Tarrago</a></li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Каталог продуктов <span class="caret"></span></a>
-                                <ul class="dropdown-menu" role="menu">
-                                    <li><a href="#">Защита</a></li>
-                                    <li><a href="#">Уход за гладкой кожей</a></li>
-                                    <li><a href="#">Уход за замшей и нубуком </a></li>
-                                    <li><a href="#">Уход за лаковой кожей </a></li>
-                                    <li><a href="#">Спорт и туризм </a></li>                                    
-                                </ul>
-                            </li>
-                            <li><a href="#">Профессиональная серия</a></li>
-                            <li><a href="#">Блог</a></li>
-                            <li><a href="#">Где купить</a></li>
-                            <li><a href="#">Отзывы</a></li>
-                            <li><a href="#">Оптовикам</a></li>
-                            <li><a href="#">Стать партнёром</a></li>
-                        </ul>
-                        
+                    </div>     
+                    <div class="row">
+                        <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-bars"></span> Каталог продуктов </a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">Защита</a></li>
+                                        <li><a href="#">Уход за гладкой кожей</a></li>
+                                        <li><a href="#">Уход за замшей и нубуком </a></li>
+                                        <li><a href="#">Уход за лаковой кожей </a></li>
+                                        <li><a href="#">Спорт и туризм </a></li>
+                                    </ul>
+                                </li>
+
+                                <li><a href="/about">О Tarrago</a></li>
+                                <li><a href="#">Профессиональная серия</a></li>
+                                <li><a href="#">Блог</a></li>
+                                <li><a href="#">Где купить</a></li>
+                                <li><a href="#">Отзывы</a></li>
+                                <li><a href="#">Оптовикам</a></li>
+                                <li><a href="#">Стать партнёром</a></li>
+                            </ul>
+
+                        </div>
                     </div>
+                    
                 </div>
             </nav>
         </header>
@@ -101,6 +108,72 @@
         <div class="content-wrapper">
            @RenderBody()
         </div>
+
+        <div class="main-soc">
+            <div class="container">
+                <h3>
+                    Присоединяйтесь в соцсетях
+                    <span class="head_small">задавайте вопросы, следите за новинками, получайте призы от бренда и партнёров</span>
+                </h3>
+                <div class="row">
+                    
+                    <div class="soc_widget">
+                        <div class="col-sm-3">
+                            <div class="soc_widget_item">
+                                <a href="https://www.instagram.com/uxod_za_obuviu/" target="_blank">
+                                    <img src="~/Content/img/instagram.jpg" />
+                                </a>
+                            </div>                            
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="soc_widget_item">
+                                <a href="https://www.youtube.com/channel/UCH8LXMaamvn_z0iLlP3k-6g" target="_blank">
+                                    <img src="~/Content/img/youtube.jpg" />
+                                </a>
+                            </div>
+                            
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="soc_widget_item">
+                                <script type="text/javascript" src="https://vk.com/js/api/openapi.js?154"></script>
+
+                                <!-- VK Widget -->
+                                <div id="vk_groups"></div>
+                                <script type="text/javascript">
+                                    VK.Widgets.Group("vk_groups", { mode: 3 }, 154461986);
+                                </script>
+                            </div>
+                            
+                        </div>
+                     
+                        <div class="col-sm-3">
+                            <div class="soc_widget_item">
+                                <div id="fb-root"></div>
+                                <script>
+                                    (function (d, s, id) {
+                                        var js, fjs = d.getElementsByTagName(s)[0];
+                                        if (d.getElementById(id)) return;
+                                        js = d.createElement(s); js.id = id;
+                                        js.src = 'https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v3.0';
+                                        fjs.parentNode.insertBefore(js, fjs);
+                                    }(document, 'script', 'facebook-jssdk'));</script>
+
+                                <div class="fb-page"
+                                     data-href="https://www.facebook.com/tarrago.salrus"
+                                     data-height="210"
+                                     data-hide-cover="false"
+                                     data-show-facepile="false"></div>
+                            </div>
+                            
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
         <footer class="main-footer">
             <div class="container">
                 <div class="row">
@@ -113,10 +186,10 @@
                             <div>Официальный дистрибьютор косметики «Tarrago» в России компания «<a href="#">Салрус</a>».</div>
                             <div class="footer_soc">
                                 
-                                    <a href="" class="footer_soc_item"><span class="fa fa-vk"></span></a>
-                                    <a href="" class="footer_soc_item"><span class="fa fa-instagram"></span></a>
-                                    <a href="" class="footer_soc_item"><span class="fa fa-facebook-f"></span></a>
-                                    <a href="" class="footer_soc_item"><span class="fa fa-youtube-play"></span></a>                                
+                                    <a href="https://vk.com/tarrago.salrus" class="footer_soc_item"><span class="fa fa-vk"></span></a>
+                                    <a href="https://www.instagram.com/uxod_za_obuviu/" class="footer_soc_item"><span class="fa fa-instagram"></span></a>
+                                    <a href="https://www.facebook.com/tarrago.salrus" class="footer_soc_item"><span class="fa fa-facebook-f"></span></a>
+                                    <a href="https://www.youtube.com/channel/UCH8LXMaamvn_z0iLlP3k-6g" class="footer_soc_item"><span class="fa fa-youtube-play"></span></a>                                
                             </div>
                         </div>
                         
@@ -173,7 +246,10 @@
     
     <script src="~/Scripts/jquery-1.10.2.js"></script>
     <script src="~/Scripts/bootstrap.min.js"></script>   
-    
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
+    </script>
+
+
 
     <script src="~/Content/plugin/slimScroll/jquery.slimscroll.min.js"></script>
     <script src="~/Content/plugin/fastclick/fastclick.min.js"></script>    
