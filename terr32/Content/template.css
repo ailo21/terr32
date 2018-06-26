@@ -152,19 +152,10 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: Exo2, sans-serif;
 }
 /* General Links */
-a {
-  color: #3c8dbc;
-}
-a:hover,
-a:active,
-a:focus {
-  outline: none;
-  text-decoration: none;
-  color: #72afd2;
-}
+
 /* Page Header */
 .page-header {
   margin: 10px 0 20px 0;

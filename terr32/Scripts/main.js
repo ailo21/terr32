@@ -25,7 +25,7 @@ function init () {
     myMap.geoObjects.add(objectManager);
 
     $.ajax({
-        url: "/content/data.json"
+        url: "/Content/data.json"
     }).done(function(data) {
         objectManager.add(data);
     });
