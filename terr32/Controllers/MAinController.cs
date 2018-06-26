@@ -33,5 +33,9 @@ namespace terr32.Controllers
         {
             return View();
         }
+        public ActionResult Review()
+        {
+            return View();
+        }
     }
 }

@@ -106,7 +106,13 @@
     <Content Include="Content\img\bloog_prod.jpg" />
     <Content Include="Content\img\instagram.jpg" />
     <Content Include="Content\img\knopka-wild.png" />
+    <Content Include="Content\img\podbor.jpg" />
+    <Content Include="Content\img\prod_exam.png" />
+    <Content Include="Content\img\review.png" />
+    <Content Include="Content\img\review_icon.png" />
+    <Content Include="Content\img\vk.png" />
     <Content Include="Content\img\youtube.jpg" />
+    <Content Include="Content\mobile.css" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
@@ -125,6 +131,7 @@
     <Content Include="Views\Main\Article.cshtml" />
     <Content Include="Views\Main\About.cshtml" />
     <Content Include="Views\Shared\_Layout - Копировать.cshtml" />
+    <Content Include="Views\Main\Review.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

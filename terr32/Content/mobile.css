@@ -1,0 +1,66 @@
+﻿
+
+@media only screen and (max-width: 768px) {
+    .video_left {
+        padding: 0 !important;
+        float: none !important;
+    }
+
+    .btn_red {
+        margin-bottom: 25px;
+    }
+
+    h3 {
+        font-size: 28px;
+    }
+
+    .bread {
+        display: none;
+    }
+
+    a.about_lk.about_lk_map {
+        margin-bottom: 40px;
+    }
+
+    .navbar-header {
+        background-color: #fff;
+    }
+
+    .navbar-toggle {
+        color: #000;
+    }
+
+    .skin-black .main-header {
+        box-shadow: none;
+    }
+
+    a.gorblog {
+        height: auto !important;
+    }
+
+    div.gorblog_info {
+        padding: 20px;
+        display: inline-block;
+    }
+    .review_form_left{
+    height:auto;
+    }
+    .review_form_center {
+        padding: 38px 20px 40px;
+    }
+    .review_form_right {
+        padding: 10px 20px 20px;
+    }
+    .dropdown-menu + .dropdown-menu {
+        margin-left: 0;
+    }
+
+
+
+        .dropdown-menu + .dropdown-menu:before{
+display:none;
+        }
+    .navbar-nav > li > .dropdown-menu{
+min-height:200px;
+    }
+}
