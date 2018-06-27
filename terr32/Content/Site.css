@@ -649,6 +649,7 @@ line-height:14px;
 .produkt_img {
     float: left;
     margin: 9px 25px 25px 0;
+    max-width: 100%
 }
 
 .produkt_art {
