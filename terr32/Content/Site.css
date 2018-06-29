@@ -484,6 +484,9 @@ font-family:Exo2;
 font-weight:bold;
 font-size:18px;
 }
+.typage img{
+max-width:100%;
+}
 .typage {
     font-size: 16px;
 }
