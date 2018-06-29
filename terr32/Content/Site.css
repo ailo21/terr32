@@ -894,11 +894,20 @@ margin-left:5px;
 margin-right:5px;
 }
 
+.yakor:first-child {
+    margin-top: -6px;
+}
+.yakor:last-child {
+    margin-bottom: -5px;
+}
+
+
 .yakor {
     display: table;
     text-decoration: none !important;
     border-bottom: 1px dashed #bd1e2e;
     margin-bottom: 16px;
+
 }
 
 
