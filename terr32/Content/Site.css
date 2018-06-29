@@ -288,6 +288,18 @@ margin-bottom:4px;
     padding-top: 72px;
     padding-bottom: 80px;
 }
+.about_left{
+font-family:Exo2;
+}
+.about_left p{
+        margin-bottom: 7px;
+}
+.about_left p>b
+{
+    margin-top: 15px;
+    display: block;
+    margin-top: 16px;
+}
 .about_left_info a{
 text-decoration:underline;
 }
@@ -295,13 +307,6 @@ text-decoration:underline;
     margin-bottom: 37px;
 }
 .main-about p{ font-size:18px;}
-.about_b{
-font-size:18px;
-font-family:Exo2;
-font-weight:bold;
-    margin-top: 15px;
-    display: block;
-}
 
 .about_lk {
     text-decoration: underline;
@@ -479,6 +484,9 @@ font-size:28px;
 margin-top:25px;
 margin-bottom:18px;
 }
+.typage p+h2{
+margin-top:20px;
+}
 .typage h6{
 font-family:Exo2;
 font-weight:bold;
@@ -497,6 +505,8 @@ font-family:Exo2;
 margin-bottom:21px;
 }
 
+
+
 .typage a{
 text-decoration:underline;
 }
@@ -507,6 +517,11 @@ text-decoration:none;
 {
     padding-left: 0;
 }
+.typage ol{
+
+}
+
+
 .typage ul li{
 list-style-type:none;
 font-size:18px;
@@ -551,6 +566,10 @@ max-width:100%;
 .select-prod_btn {
     margin-top: -130px;
     
+}
+a.btn_wild {
+    display: block;
+    margin-top: 22px;
 }
 
 .btn_red {
@@ -793,13 +812,16 @@ margin-bottom:30px;
 .im_item{
 display:inline-block;
 }
+.article_single {
+    margin-bottom: 97px;
+}
 
 .article_col:nth-child(4n+1)
 {
-clear:both;
+    clear:both;
 }
 .article_col:first-child{
-clear:none!important;
+    clear:none!important;
 }
 
 .article_item {
@@ -810,8 +832,12 @@ clear:none!important;
     margin-bottom: 40px;
 }
 .article_item:hover{
-    color:#000;
+        color: #000;
+        background-color: #ebedf3;
 }
+.article_item:hover .article_header {
+        color: #bd1e2e;
+    }
 .article_header {
     font-weight: bold;
     font-size: 18px;
@@ -869,8 +895,10 @@ margin-right:5px;
 }
 
 .yakor {
-    text-decoration: none!important;
+    display: table;
+    text-decoration: none !important;
     border-bottom: 1px dashed #bd1e2e;
+    margin-bottom: 16px;
 }
 
 
@@ -881,6 +909,7 @@ blockquote {
     border-radius: 0;
     padding-left: 30px;
     display: flex;
+    margin-bottom: 34px;
 }
     blockquote:before {
         content: "\f071";
