@@ -542,7 +542,9 @@ margin-bottom: 16px;
     padding: 31px 15px 30px;
     margin: 0;
     font-size: 13px;
+
 }
+.breadcrumb>.active,
 .breadcrumb a{
     font-family: Exo2;
     color:#000;
@@ -565,6 +567,7 @@ max-width:100%;
 }
 .select-prod_btn {
     margin-top: -130px;
+
     
 }
 a.btn_wild {
@@ -664,9 +667,10 @@ line-height:14px;
     font-size: 18px;
     text-decoration: none !important;
 }
-.types_item:hover{
-    color:#fff;
-}
+    .types_item:hover,
+    .types_item:active, .types_item:focus {
+        color: #fff;
+    }
 
 .produkt_img {
     float: left;
@@ -815,7 +819,9 @@ display:inline-block;
 .article_single {
     margin-bottom: 97px;
 }
-
+.article_single h1{
+margin-bottom: 48px;
+}
 .article_col:nth-child(4n+1)
 {
     clear:both;
@@ -868,8 +874,15 @@ padding: 20px 20px;
 ul.pagination li:before{
 display:none;
 }
-.pagination > li > a{
+.pagination li:first-child a {
+    padding-right: 11px;
+}
 
+.pagination li:last-child a {
+    padding-left: 17px;
+}
+.pagination>li a{
+margin:0 1px;
 }
 .pagination > li.active a {
     background-color: #bd1e2e;
@@ -886,12 +899,15 @@ text-decoration:underline;
 color:#bd1e2e;
 
 }
-.pagination > li >a span
-{
-    font-size: 23px;
+
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+    background-color: #bd1e2e;
+}
+.pagination > li > a span {
+    font-size: 27px;
     font-weight: bold;
-margin-left:5px;
-margin-right:5px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .yakor:first-child {
@@ -919,6 +935,8 @@ blockquote {
     padding-left: 30px;
     display: flex;
     margin-bottom: 34px;
+    font-size: 18px;
+    line-height: 21px;
 }
     blockquote:before {
         content: "\f071";
